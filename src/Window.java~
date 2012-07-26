@@ -24,11 +24,11 @@ public class Window extends JFrame implements KeyEventDispatcher {
 		this.setTitle("Pokemon");
 		tabs = new JTabbedPane();
 		pokemonPanel = new PokemonPanel();
-		//developmentPanel = new DevelopmentPanel();
+		developmentPanel = new DevelopmentPanel();
 		game = new Thread(pokemonPanel);
-		//development = new Thread(developmentPanel);
+		development = new Thread(developmentPanel);
 		tabs.addTab("Gioco", null, pokemonPanel);
-		//tabs.addTab("Sviluppo", null, developmentPanel);
+		tabs.addTab("Sviluppo", null, developmentPanel);
 		this.add(tabs);
 		this.setJMenuBar(PokemonPanel.menuBar);
 		

@@ -3,7 +3,7 @@ import javax.swing.ImageIcon;
 
 public class Petalipoli extends Map {
 	public static final ImageIcon
-		mapImage = new ImageIcon("../mappe/Petalipoli.png")
+		mapImage = new ImageIcon("./mappe/Petalipoli.png")
 	;
 	public static final int
 		mapImageL = Maps.PERCORSO104,
