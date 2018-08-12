@@ -1,11 +1,13 @@
+package io.github.jacopogobbi.pkmn;
+
 import javax.swing.ImageIcon;
 
 
-public class Percorso102 extends Map {
-	public static final ImageIcon
+class Percorso102 extends Map {
+	static final ImageIcon
 		mapImage = new ImageIcon("./mappe/Percorso 102.png")
 	;
-	public static final	int
+	static final	int
 			mapX = 0,
 			mapY = 0,
 			sizeX = 800,

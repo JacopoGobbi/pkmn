@@ -1,17 +1,14 @@
-import java.awt.BorderLayout;
-import java.awt.KeyEventDispatcher;
-import java.awt.KeyboardFocusManager;
+package io.github.jacopogobbi.pkmn;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.KeyEvent;
-
-import javax.swing.JFrame;
-import javax.swing.JTabbedPane;
-
 
 public class Window extends JFrame implements KeyEventDispatcher {
 	private static final long serialVersionUID = 1L;
 	
-	PokemonPanel pokemonPanel;
-	JTabbedPane tabs;
+	private PokemonPanel pokemonPanel;
+	private JTabbedPane tabs;
 	DevelopmentPanel developmentPanel;
 	
 	public static void main(String args[]) {
@@ -19,7 +16,7 @@ public class Window extends JFrame implements KeyEventDispatcher {
         Window w = new Window();
 	}
 
-    public Window() {
+    private Window() {
     	Thread game, development;
 		this.setTitle("Pokemon");
 		tabs = new JTabbedPane();

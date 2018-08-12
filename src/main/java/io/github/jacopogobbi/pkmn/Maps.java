@@ -1,7 +1,9 @@
+package io.github.jacopogobbi.pkmn;
+
 import javax.swing.ImageIcon;
 
-public class Maps {
-	public static final int
+class Maps {
+	static final int
 		MAPS[] = {
 			0, 1, 2, 3
 		},
@@ -64,13 +66,13 @@ public class Maps {
 			Solarosa.sizeY
 		}
 	;
-	public static int[] getMapBounds(int mapSizeX, int mapSizeY, int currentPlayerX, int currentPlayerY) {
+	static int[] getMapBounds(int mapSizeX, int mapSizeY, int currentPlayerX, int currentPlayerY) {
 		return new int[]{
 			(mapSizeX	/16			/2		-(currentPlayerX+1))	*16,
 			(mapSizeY	/16			/2		-(currentPlayerX+1))	*16
 		};
 	}
-	public static int[] leftMapsBounds(int mapSizeX, int mapSizeY, int mapLeft, int mapGetX, int mapGetY) {
+	static int[] leftMapsBounds(int mapSizeX, int mapSizeY, int mapLeft, int mapGetX, int mapGetY) {
 		int ar[] = new int[2];
 		switch(mapLeft) {
 			case PERCORSO104:
@@ -91,7 +93,7 @@ public class Maps {
 		}
 		return ar;
 	}
-	public static int[] rightMapsBounds(int mapSizeX, int mapSizeY, int mapRight, int mapImageGetX, int mapImageGetY) {
+	static int[] rightMapsBounds(int mapSizeX, int mapSizeY, int mapRight, int mapImageGetX, int mapImageGetY) {
 		int ar[] = new int[2];
 		switch(mapRight) {
 			case PERCORSO104:
@@ -112,7 +114,7 @@ public class Maps {
 		}
 		return ar;
 	}
-	public static final ImageIcon
+	static final ImageIcon
 		mapsImages[] = {
 			Percorso104.mapImage,
 			Petalipoli.mapImage,

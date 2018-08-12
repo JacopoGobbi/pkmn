@@ -1,8 +1,10 @@
+package io.github.jacopogobbi.pkmn;
+
 import javax.swing.ImageIcon;
 
-public class PokemonImages {
+class PokemonImages {
 	ImageIcon pokemon[][];
-	int i;
+	private int i;
 	PokemonImages() {
 		pokemon = new ImageIcon[386][2];
 		for(i=0; i < 386; ++i) {

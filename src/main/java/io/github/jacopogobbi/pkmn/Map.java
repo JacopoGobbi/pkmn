@@ -1,8 +1,10 @@
+package io.github.jacopogobbi.pkmn;
+
 import javax.swing.ImageIcon;
 
 
 public class Map {
-	public static final int
+	static final int
 		CANWALK = 2,
 		CANTWALK = 3,
 		CHANGEMAP = 5,
@@ -19,7 +21,7 @@ public class Map {
 	public static final
 		ImageIcon mapImage = new ImageIcon()
 	;
-	public static int[] findPoint(int theMap, int num, int k,  int l) {
+	static int[] findPoint(int theMap, int num, int k, int l) {
 		int ar[] = new int[2], i, j;
 		for(i = k; i < (Maps.sizeX[theMap]/16); ++i)
 			for(j = l; j < (Maps.sizeY[theMap]/16); ++j)

@@ -1,3 +1,5 @@
+package io.github.jacopogobbi.pkmn;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 

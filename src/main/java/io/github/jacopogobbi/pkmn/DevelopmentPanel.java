@@ -1,3 +1,5 @@
+package io.github.jacopogobbi.pkmn;
+
 import javax.swing.DefaultListModel;
 import javax.swing.JList;
 import javax.swing.JPanel;
@@ -5,7 +7,7 @@ import javax.swing.JPanel;
 
 public class DevelopmentPanel extends JPanel implements Runnable {
 	JList l;
-	DefaultListModel model = new DefaultListModel();
+	private DefaultListModel model = new DefaultListModel();
 	String s[];
 	DevelopmentPanel() {
 		l = new JList(model);

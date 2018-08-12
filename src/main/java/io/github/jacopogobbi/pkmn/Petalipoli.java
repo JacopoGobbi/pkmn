@@ -1,11 +1,11 @@
+package io.github.jacopogobbi.pkmn;
+
 import javax.swing.ImageIcon;
 
 
-public class Petalipoli extends Map {
-	public static final ImageIcon
-		mapImage = new ImageIcon("../mappe/Petalipoli.png")
-	;
-	public static final int
+class Petalipoli extends Map {
+	static final ImageIcon mapImage = new ImageIcon("../mappe/Petalipoli.png");
+	static final int
 		mapImageL = Maps.PERCORSO104,
 		mapImageR = Maps.PERCORSO102,
 		sizeX = 480,
